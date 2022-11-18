@@ -16,6 +16,13 @@
     font-family: fonteLogo;
     src:url(../fonts/THE_JACATRA.otf)
   }
+
+  @font-face {
+    font-family: fonteDark;
+    src:url(../fonts/HackbotFreeTrial.otf)
+  }
+  
+
   html,body{
     overflow-x: hidden;
   }
@@ -23,7 +30,23 @@
     background-color: var(--Corfundo);
   
   }
+  body::-webkit-scrollbar {
+    width: 10px;               
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--Corfundo)     
+  }
   
+  body::-webkit-scrollbar-thumb {
+    background-color:var(--corDetalhes);  
+    border-radius: 20px;       
+ 
+  }
+
+
+
+  /*---------------------- HEADER -----------------*/
 
   header{
     position: relative;
@@ -58,12 +81,16 @@ width: 100%;
 
   .logo{
 text-align: center;
+position: relative;
+
   }
 
   .logo h1 {
     font-family: fonteLogo;
     color: var(--corDetalhes);
+
   }
+
 
 nav a{
     text-decoration: none;
@@ -150,6 +177,7 @@ main {
     margin-top: 10px;
     width: 50%;
 }
+
 .aboutme h2{
     font-weight: 100;;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -175,6 +203,7 @@ margin-top: 50px;
     flex-direction: column;
     padding: 30px;
     border-bottom: 2px solid var(--corDetalhes);
+
 }
 
 .secondSection h1
@@ -184,7 +213,6 @@ margin-top: 50px;
     font-size: 2em;
     margin-bottom: 20px;
 }
-
 
 .twocontent{
     display: flex;
@@ -223,12 +251,18 @@ color: var(--corDetalhes);
     margin-top: 50px;
     color: var(--corDetalhes);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .thirdsection h1 {
 
     font-family: fonteLogo;
+
 }
+
 .thirdsection h2 {
  margin-top: 20px;
  font-weight: 100;
@@ -259,3 +293,36 @@ footer h1 {
     font-weight: 100;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+
+
+
+
+.animacaoTextoDark{
+
+max-width: 0;
+overflow: hidden;
+white-space: nowrap;
+border-right: 2px solid var(--corDetalhes);
+animation: piscar normal infinite 0.8s , escrever normal 2s steps(55) both;
+
+}
+
+@keyframes piscar 
+
+{
+ 
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrever {
+
+    100%{
+        max-width: 100%;
+    }
+    
+}
+

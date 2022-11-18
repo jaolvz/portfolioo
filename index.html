@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="modeDar">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Portfólio com projetos pessoais.">
@@ -13,14 +13,14 @@
 </head>
 <body>
 <header> 
-    <div class="logo"><h1>Feja</h1></div>
+    <div class="logo"><h1 id="logo">Feja</h1></div>
    
     <nav> 
         <a href="#projetos">Projetos</a>
         <a href="#sobremim">Sobre mim</a>
         <a href="#contatos">Contato</a>
     </nav>
-    <button><i class="fa-solid fa-sun"></i></button>
+    <button id="btnDark" onclick="dark()"><i id="imgBtn" class="fa-solid fa-moon"></i></button>
 </header>
 <main>
 <section class="firstSection">
@@ -35,8 +35,8 @@
         <h2>Eai, beleza?! Me chamo João Vitor (também conhecido como Feja), tenho 20 anos e estou cursando Análise e Desenvolvimento de Sistemas na <a href="">FAETERJ-RJ</a>.
             Minha paixão por tecnologia vem desde pequeno quando recebi meu primeiro computador dos meus pais. Era um Celeron, mas era minha felicidade diária.
              Desde então, comecei a editar vídeos para o Youtube até que,em 2017, concursado, entrei no Colégio Pedro II para fazer Ensino Médio Técnico em Análise e Desenvolvimento de Sistemas com foco nas linguaguem C#, PHP e desenvolvimento Web.
-           Depois que fiz meu primeiro projeto, percebi que era aquilo que queria para minha vida. Hoje em dia, estou na graduação estudando a linguagem C e desenvolvimento Web e, por conta própria, estou bucando framework de desenvolvimento web para me aprofundar. </h2>
-    </div>
+             Depois que fiz meu primeiro projeto, percebi que era aquilo que queria para minha vida. Hoje em dia, estou na graduação estudando a linguagem C e desenvolvimento Web e, por conta própria, estou bucando framework de desenvolvimento web para me aprofundar. </h2>
+            </div>
 
     <div >
         <a href="https://github.com/jaolvz">  <i class="fa-brands fa-github"></i></a>
@@ -51,8 +51,6 @@
             <img src="imgs/canario_claro.png">
             <h1>Canário</h1>
             <h4>Canário é um homenagem ao Coruja, site oficial da FAETERJ-RJ. O Canário numa reprodução do Coruja com página escura.</h4>
-
-
         </div>
         <div>
             <img src="imgs/netflix.png">
@@ -73,15 +71,20 @@
 </section>
 <section class="thirdsection"> 
     <h1 id="contatos">Contatos</h1>
-    <h2> Caso tenha alguma proposta, curiosidade, sugestão ou apenas queira trocar alguma idéia. Aqui estão minhas redes sociais. :)</h2>
-    <i class="fa-brands fa-instagram"></i>
+     <h2> Caso tenha alguma proposta, curiosidade, sugestão ou apenas queira trocar alguma idéia. Aqui estão minhas redes sociais. :)</h2>
+    
+    <div>
+        <i class="fa-brands fa-instagram"></i>
     <i class="fa-brands fa-twitter"></i>    
     <a href="https://github.com/jaolvz">  <i class="fa-brands fa-github"></i></a>
     <a href="https://www.linkedin.com/in/jaolvz/"><i class="fa-brands fa-linkedin"></i></a>
+    </div> 
+    
 </section>
 </main>
     <footer>
         <h1> CRIADO POR JOÃO VITOR GONÇALVES DE OLIVEIRA</h1>
     </footer>
 </body>
+<script src="script/script.js"></script>
 </html>
