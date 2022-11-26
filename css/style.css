@@ -22,11 +22,7 @@
     src:url(../fonts/HackbotFreeTrial.otf)
   }
   
-  @font-face {
-    font-family: LemonMilk;
-    src:url(../fonts/Louis\ George\ Cafe\ Light.ttf )
-  }
-  
+ 
 
   html,body{
     overflow-x: hidden;
