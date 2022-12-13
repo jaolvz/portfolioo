@@ -7,7 +7,6 @@ function dark()
     var  imgBtn = document.getElementById("imgBtn");
     var  fotopessoal = document.getElementById("mypicture");
     var  fotoCanario = document.getElementById("imgCanario");
-    var  fotoEmBreve = document.getElementById("imgEmBreve");
 
 
    animaçõestxtDark();
@@ -15,7 +14,6 @@ function dark()
     imgBtn.classList.add("fa-sun");
     fotopessoal.setAttribute("src","imgs/user.jpg");
     fotoCanario.setAttribute("src","imgs/canario_dark.png");
-    fotoEmBreve.setAttribute("src","imgs/embreve_dark.png");
     pagina.classList.add("modeDark");
     btn.setAttribute("onclick","white()");
 }
@@ -27,13 +25,12 @@ function white()
     var pagina = document.getElementById("html");
     var  imgBtn = document.getElementById("imgBtn");
     var  fotopessoal = document.getElementById("mypicture");
-    var  fotoEmBreve = document.getElementById("imgEmBreve");
     var  fotoCanario = document.getElementById("imgCanario");
     
     
     animaçõestxtWhite ();
     fotoCanario.setAttribute("src","imgs/canario_claro.png");
-    fotoEmBreve.setAttribute("src","imgs/embreve.png");
+
     fotopessoal.setAttribute("src","imgs/my.jpg");
     imgBtn.classList.remove("fa-sun");
     imgBtn.classList.add("fa-moon");
@@ -70,7 +67,7 @@ function animaçõestxtDark (){
  {
 
     var logo = document.getElementById("logo");
- var sobremim = document.getElementById("sobremim");
+    var sobremim = document.getElementById("sobremim");
     var projetos = document.getElementById("projetos");
     var contatos = document.getElementById("contatos");
 
